@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="menu">
+                <div class="menu-center">
+                    <div class="menu-logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="link" id="statistic_btn">
+                        <div class="link-icon"><img src="images/chart-bar-svgrepo-com.svg" alt=""></div>
+                        <a href="/" class="nav__link" data-link >Статистика</a>
+                    </div>
+                    <div class="link"id="history_btn">
+                        <div class="link-icon"><img src="images/clock-svgrepo-com.svg" alt=""></div>
+                        <a href="/history" class="nav__link" data-link data-history>История</a>
+                    </div>
+                    <div class="link"id="orders_btn">
+                        <div class="link-icon"><img src="images/clipboard-svgrepo-com.svg" alt=""></div>
+                        <a href="/orders" class="nav__link" data-link>Заявки</a>
+                    </div>
+                    <div class="link"id="sklad_btn">
+                        <div class="link-icon"><img src="images/briefcase-svgrepo-com.svg" alt=""></div>
+                        <a href="/inventory" class="nav__link" data-link data-products>Склад</a>
+                    </div>
+                    <div class="link"id="printers_btn">
+                        <div class="link-icon"><img src="images/printer-svgrepo-com.svg" alt=""></div>
+                        <a href="/printers" class="nav__link" data-link>Принтеры</a>
+                    </div>
+                    
+                    <div class="link"id="settings_btn">
+                        <div class="link-icon"><img src="images/cog-svgrepo-com.svg" alt=""></div>
+                        <a href="/settings" class="nav__link" data-link>Настройки</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="app"></div>
+        </div>
+    </div>
+    <script type="module" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="/static/js/renderHistory.js"></script>
+    <script type="text/javascript" src="/static/js/renderProducts.js"></script>
+    <script type="text/javascript" src="/static/js/addedHistory.js"></script>
+    <script type="text/javascript" src="/static/js/addedOrder.js"></script>
+</body>
+</html>
